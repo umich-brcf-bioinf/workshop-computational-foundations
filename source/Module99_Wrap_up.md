@@ -39,7 +39,7 @@ that will enable more efficient, reproducible, and impactful computational resea
 
 ## Housekeeping
 
-- Please take our optional <a class="external" href="https://forms.gle/qutk9ph6covvjrcS8" target="_blank">post-workshop survey</a> (5-10 minutes) <br />
+- Please take our optional <a class="external" href="https://forms.gle/eidMPDLtSYDpAVmX7" target="_blank">post-workshop survey</a> (5-10 minutes) <br />
 
 - We will email you a link to the final session recordings by next week.
 
@@ -106,11 +106,8 @@ for 90 days.
 | ![](images/Module00_headshots/headshot_cgates.jpg) | ![](images/Module00_headshots/headshot_mbradenb.jpg) | ![](images/Module00_headshots/headshot_rcavalca.jpg) |
 |:-:|:-:|:-:|
 | **Chris** | **Marci** | **Raymond** |
-| ![](images/Module00_headshots/headshot_trsaari.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) | ![](images/Module00_headshots/headshot_mkdohert.jpg) |
-| **Travis** | **Dana** | **Matt** |
-| ![](images/Module00_headshots/headshot_jrhemama.jpg) | ![](images/Module00_headshots/headshot_grkenney.jpg) | ![](images/Module00_headshots/headshot_mccwen.jpg) |
-| **Rhema** | **Grace** | **Crystal** |
-
+| ![](images/Module00_headshots/headshot_trsaari.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) |
+| **Travis** | **Dana** |
 
 <br/>
 
