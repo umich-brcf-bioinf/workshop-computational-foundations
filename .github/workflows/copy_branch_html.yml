@@ -22,8 +22,6 @@ jobs:
           git config --global user.email 'action@github.com'
           git fetch
           git checkout $TARGET_BRANCH
-          #git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
-          #git checkout 2023-11-01 -- $SRC_FOLDER_PATH
           git checkout ${GITHUB_REF##*/} -- $SRC_FOLDER_PATH
           mkdir -p ${GITHUB_REF##*/}
           rm -rf ${GITHUB_REF##*/}/$SRC_FOLDER_PATH
