@@ -59,11 +59,8 @@ recognize these techniques when you see them and, with some independent study, a
 | ![](images/Module00_headshots/headshot_cgates.jpg) | ![](images/Module00_headshots/headshot_mbradenb.jpg) | ![](images/Module00_headshots/headshot_rcavalca.jpg) |
 |:-:|:-:|:-:|
 | **Chris** | **Marci** | **Raymond** |
-| ![](images/Module00_headshots/headshot_trsaari.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) | ![](images/Module00_headshots/headshot_mkdohert.jpg) |
-| **Travis** | **Dana** | **Matt** |
-| ![](images/Module00_headshots/headshot_jrhemama.jpg) | ![](images/Module00_headshots/headshot_grkenney.jpg) | ![](images/Module00_headshots/headshot_mccwen.jpg) |
-| **Rhema** | **Grace** | **Crystal** |
-
+| ![](images/Module00_headshots/headshot_trsaari.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) |
+| **Travis** | **Dana** |
 <br/>
 
 
@@ -149,7 +146,7 @@ breakout room.
 
 ![Posting messages to Slack](images/Module00_slack.png)
 
-  - Slack messages will be posted to the **2023-07-computational-foundations** channel.
+  - Slack messages will be posted to the **2023-11-computational-foundations** channel.
     Click on the channel in the left pane (1) to select this channel.
   - You can type in the **message field** (2); click **send** (3) to
     post your message to everyone.
