@@ -1,0 +1,23 @@
+name: Deploy release 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  copy:
+    name: Deploy release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: copy
+        env:
+          RELEASE_BRANCH: '2023-11-01'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch
+          git checkout $RELEASE_BRANCH
+          git merge main
+          git push
