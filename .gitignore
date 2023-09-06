@@ -1,0 +1,6 @@
+**/.DS_Store
+**/.Rhistory
+**/*.RData
+**/~$*.pptx
+html/*.md
+html/workshop_setup/*.md
