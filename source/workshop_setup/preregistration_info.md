@@ -44,7 +44,7 @@ in a Computational Foundations workshop, Software Carpentry workshop, or equival
   * The workshop will be recorded and the recordings will be made available to those who attend the workshop.
 * The cost is $390/seat for the entire two-workshop series.
   * While it is possible to register for a single workshop, we recommend that you attend both. When you enroll in the **RNA-Seq Demystified** workshop, you can request to be automatically registered for **Computational Foundations**. 
-  * The **Computational Foundations** workshop is free of charge, however please note that: 1) registration precedence is given to RNA-Seq Demystified attendees and 2) general admission registration for Computational Foundations opens mid-July.
+  * The **Computational Foundations** workshop is free of charge, however please note that: 1) registration precedence is given to RNA-Seq Demystified attendees and 2) general admission registration for Computational Foundations opens mid-October.
   
 * Registration closes 10/25/2023.
 
