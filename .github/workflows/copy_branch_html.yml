@@ -1,4 +1,4 @@
-name: Copy html folder to gh-branch
+name: Copy html folder of updated branch to gh-branch
 
 on:
   push:
