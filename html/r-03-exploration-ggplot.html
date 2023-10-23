@@ -13,7 +13,7 @@
 
 <title>Data Visualization with ggplot</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -336,7 +336,6 @@ geometries</a></li>
 <li><a href="#scale" id="toc-scale">Scale</a></li>
 <li><a href="#size" id="toc-size">Size</a></li>
 <li><a href="#compact-code" id="toc-compact-code">Compact code</a></li>
-<li><a href="#captions" id="toc-captions">Captions</a></li>
 <li><a href="#exploring-more-complex-data"
 id="toc-exploring-more-complex-data">Exploring more complex
 data</a></li>
@@ -394,7 +393,7 @@ to load the <code>gapminder_1997</code> data. Let’s do that again:</p>
 <pre class="r"><code>library(tidyverse)
 gapminder_1997 = read_csv(&#39;data/gapminder_1997.csv&#39;)</code></pre>
 <pre><code>Rows: 142 Columns: 6
-── Column specification ────────────────────────────────────────────────────────────────────────────────────
+── Column specification ───────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;,&quot;
 chr (2): country, continent
 dbl (4): year, pop, lifeExp, gdpPercap
@@ -622,19 +621,6 @@ a bit more compact and readable:</p>
 <p><img src="fig/03-plot_compact_code-1.png" width="816" style="display: block; margin: auto;" /></p>
 <p><strong>Checkpoint</strong></p>
 </div>
-<div id="captions" class="section level2">
-<h2>Captions</h2>
-<p>Captions can also be included in the plot itself, if desired, within
-the <code>labs()</code> function:</p>
-<pre class="r"><code>ggplot(data = gapminder_1997) + 
-    aes(x = gdpPercap, y = lifeExp, color = continent, size = pop/1000000) + 
-    geom_point() + 
-    scale_color_brewer(palette = &#39;Set1&#39;) + 
-    labs(x = &#39;GDP Per Capita&#39;, y = &#39;Life Expectancy&#39;, color = &#39;Continent&#39;, size = &#39;Population (in millions)&#39;,
-         title = &#39;Do people in wealthier countries live longer?&#39;,
-         caption = &#39;Figure: GDP per capita and life expectancy are positively correlated, while population is not.&#39;)</code></pre>
-<p><img src="fig/03-plot_caption-1.png" width="816" style="display: block; margin: auto;" /></p>
-</div>
 <div id="exploring-more-complex-data" class="section level2">
 <h2>Exploring more complex data</h2>
 <p>The <code>gapminder_1997</code> has been useful for exploring
@@ -645,7 +631,7 @@ more complex dataset so we have a bit more data to explore. The
 load in the data.</p>
 <pre class="r"><code>gapminder_data = read_csv(&#39;data/gapminder_data.csv&#39;)</code></pre>
 <pre><code>Rows: 1704 Columns: 6
-── Column specification ────────────────────────────────────────────────────────────────────────────────────
+── Column specification ───────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;,&quot;
 chr (2): country, continent
 dbl (4): year, pop, lifeExp, gdpPercap
@@ -946,11 +932,7 @@ on the x axis and the life expectancy on the y-axis.</p>
 <p><img src="fig/03-plot_box-1.png" width="816" style="display: block; margin: auto;" /></p>
 <p>This makes comparing the range and spread of values across groups
 easier. The median of the data is displayed, as is the 25% and 75%-iles
-and any outliers. Another discrete geometry is the
-<code>geom_violin</code>, which gives an indication of the density of
-the data points along the values being plotted.</p>
-<pre class="r"><code>ggplot(data = gapminder_1997) + aes(x = continent, y = lifeExp) + geom_violin()</code></pre>
-<p><img src="fig/03-plot_violin-1.png" width="816" style="display: block; margin: auto;" /></p>
+and any outliers.</p>
 <p><strong>Checkpoint</strong></p>
 </div>
 <div id="factors" class="section level2">
@@ -1126,20 +1108,7 @@ counted. Let’s change the number of bins to 20.</p>
     aes(x = lifeExp) + 
     geom_histogram(bins = 20)</code></pre>
 <p><img src="fig/03-plot_histogram_bins-1.png" width="816" style="display: block; margin: auto;" /></p>
-<p>We can see there are fewer bins in this plot. If we wanted to make
-the bins span 5 years, we would do:</p>
-<pre class="r"><code>ggplot(data = gapminder_1997) +
-    aes(x = lifeExp) + 
-    geom_histogram(binwidth = 5)</code></pre>
-<p><img src="fig/03-plot_histogram_binwidth-1.png" width="816" style="display: block; margin: auto;" /></p>
-<p>Changing the binwidth makes the histogram more easily intepretable
-because we know the range of each bar. If, instead of frequency, we
-wanted to look at the density, the smoothed version of the histogram, we
-could use the <code>geom_density()</code> geometry.</p>
-<pre class="r"><code>ggplot(data = gapminder_1997) +
-    aes(x = lifeExp) + 
-    geom_density()</code></pre>
-<p><img src="fig/03-plot_density-1.png" width="816" style="display: block; margin: auto;" /></p>
+<p>We can see there are fewer bins in this plot.</p>
 <p><strong>Checkpoint</strong></p>
 </div>
 <div id="facets" class="section level2">
@@ -1179,16 +1148,6 @@ the same for all the y-axes to make them comparable, but there are
 parameters of <code>facet_grid()</code> that allow the scales to change
 depending on the data within the facet itself if that’s more
 appropriate.</p>
-<blockquote>
-<h2 id="exercise-3">Exercise</h2>
-<p>How would we modify the above code to display the facets as
-columns?</p>
-<pre class="r"><code>ggplot(gapminder_1997) + 
-    aes(x = gdpPercap, y = lifeExp) + 
-    geom_point() + 
-    facet_grid(cols = vars(continent))</code></pre>
-<p><img src="fig/03-facet_solution-1.png" width="816" style="display: block; margin: auto;" /></p>
-</blockquote>
 <p><strong>Checkpoint</strong></p>
 </div>
 </div>
@@ -1270,14 +1229,6 @@ parameters to fix that. This is a case where an example from searching
 the internet was helpful.</p>
 <pre class="r"><code>scatter_plot + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))</code></pre>
 <p><img src="fig/03-rotate_labels2-1.png" width="816" style="display: block; margin: auto;" /></p>
-<blockquote>
-<h2 id="exercise-4">Exercise</h2>
-<p>After looking at the attributes for <code>theme()</code> with
-<code>?theme</code>, how would we change just the size of the plot
-title?</p>
-<pre class="r"><code>scatter_plot + theme(plot.title = element_text(size = 16))</code></pre>
-<p><img src="fig/03-title_size_solution-1.png" width="816" style="display: block; margin: auto;" /></p>
-</blockquote>
 <p><strong>Checkpoint</strong></p>
 </div>
 <div id="labeling-points" class="section level2">
@@ -1356,9 +1307,9 @@ that they only apply to that layer:</p>
 <p><img src="fig/03-plot_labels2-1.png" width="816" style="display: block; margin: auto;" /></p>
 <p><strong>Checkpoint</strong></p>
 <blockquote>
-<h2 id="exercise-5">Exercise</h2>
+<h2 id="exercise-3">Exercise</h2>
 <p>In a previous exercise we created a plot showing the trend of life
-expectancy across all countries over time, colored by the continent. THe
+expectancy across all countries over time, colored by the continent. The
 following code generates a similar plot but for the GDP per capita.</p>
 <pre class="r"><code>ggplot(data = gapminder_data, aes(x = year, y = gdpPercap, color = continent, group = country)) +
     geom_line() + theme_bw() +
