@@ -142,28 +142,6 @@ arrange(gapminder_1997, desc(lifeExp))
 
 And here we see that Japan is the country with the longest lived citizens at a little over 80 years.
 
-If we wanted to use base R, we might start with the `sort()` function:
-
-```{r, 'sort_lifeexp'}
-sort(gapminder_1997$lifeExp, decreasing = TRUE)
-```
-
-But this only sorts the `lifeExp` column and drops all the other information in the table, so we know the highest life expectancy but not the country to which it belongs. There is another function called `order()` which returns the indices of the sorting. Let's call it first by itself and think about how to get what we want from it:
-
-```{r, 'order_lifexp'}
-order(gapminder_1997$lifeExp, decreasing = TRUE)
-```
-
-This is a vector of the row indices of `gapminder_1997` and the meaning of the result is that the 67th row is the entry with the highest `lifeExp`, the 56th row the second highest etc. We can re-order the rows of `gapminder_1997` using this vector of indices as in:
-
-```{r, 'order_lifexp2'}
-gapminder_1997[order(gapminder_1997$lifeExp, decreasing = TRUE), ]
-```
-
-We see that we got the same thing as in `arrange()`. We observe that a data table has two dimensions (rows and columns). With square-bracket accessors, the rows are first and the columns are second, separated by a comma. We left the second entry in the `[,]` blank to indicate we want all columns returned. In the first entry, denoting the rows, we give it the vector of indices with the correct ordering.
-
-This is an excellent example of the relative simplicity of the `tidyverse` over base R.
-
 **Checkpoint**
 
 > ## Exercise
@@ -199,17 +177,7 @@ Columns can be removed using `select()` with a "minus" in front of the column na
 select(gapminder_1997, -year)
 ```
 
-Notice the `year` column is no longer displayed. The equivalent can be done in base R with:
-
-```{r, 'base_select_negative'}
-gapminder_1997[, -2]
-```
-
-Note, the base R syntax works for numerical column indices only. The following throws a somewhat inscrutable error if we try to use the name of the column as we did in the `tidyverse` syntax:
-
-```{r, 'base_select_negative_error', error = TRUE}
-gapminder_1997[, -c('year')]
-```
+Notice the `year` column is no longer displayed.
 
 ## Saving objects
 
