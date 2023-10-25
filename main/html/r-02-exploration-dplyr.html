@@ -13,7 +13,7 @@
 
 <title>Data Transformation with dplyr</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -397,8 +397,18 @@ pre {
 to load the <code>gapminder_1997</code> data. Let’s do that again:</p>
 <pre class="r"><code>library(tidyverse)
 gapminder_1997 = read_csv(&#39;data/gapminder_1997.csv&#39;)</code></pre>
-<pre><code>Rows: 142 Columns: 6
-── Column specification ────────────────────────────────────────────────────────────────────────────────────
+<pre><code>── Attaching core tidyverse packages ─────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ───────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+Rows: 142 Columns: 6
+── Column specification ───────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;,&quot;
 chr (2): country, continent
 dbl (4): year, pop, lifeExp, gdpPercap
@@ -449,13 +459,20 @@ ranges of the data.</p>
 as input and will summarize the columns automatically depending on their
 data type.</p>
 <pre class="r"><code>summary(gapminder_1997)</code></pre>
-<pre><code>   country               year           pop             continent            lifeExp        gdpPercap      
- Length:142         Min.   :1997   Min.   :1.456e+05   Length:142         Min.   :36.09   Min.   :  312.2  
- Class :character   1st Qu.:1997   1st Qu.:3.770e+06   Class :character   1st Qu.:55.63   1st Qu.: 1366.8  
- Mode  :character   Median :1997   Median :9.735e+06   Mode  :character   Median :69.39   Median : 4781.8  
-                    Mean   :1997   Mean   :3.884e+07                      Mean   :65.01   Mean   : 9090.2  
-                    3rd Qu.:1997   3rd Qu.:2.431e+07                      3rd Qu.:74.17   3rd Qu.:12022.9  
-                    Max.   :1997   Max.   :1.230e+09                      Max.   :80.69   Max.   :41283.2  </code></pre>
+<pre><code>   country               year           pop             continent            lifeExp     
+ Length:142         Min.   :1997   Min.   :1.456e+05   Length:142         Min.   :36.09  
+ Class :character   1st Qu.:1997   1st Qu.:3.770e+06   Class :character   1st Qu.:55.63  
+ Mode  :character   Median :1997   Median :9.735e+06   Mode  :character   Median :69.39  
+                    Mean   :1997   Mean   :3.884e+07                      Mean   :65.01  
+                    3rd Qu.:1997   3rd Qu.:2.431e+07                      3rd Qu.:74.17  
+                    Max.   :1997   Max.   :1.230e+09                      Max.   :80.69  
+   gdpPercap      
+ Min.   :  312.2  
+ 1st Qu.: 1366.8  
+ Median : 4781.8  
+ Mean   : 9090.2  
+ 3rd Qu.:12022.9  
+ Max.   :41283.2  </code></pre>
 <p>We see that for the numeric data we get quantile information and the
 mean, whereas for character data we simply get the length of the column.
 For data with NAs, the number thereof would be displayed.</p>
@@ -563,62 +580,6 @@ order to be descending.</p>
 # ℹ 132 more rows</code></pre>
 <p>And here we see that Japan is the country with the longest lived
 citizens at a little over 80 years.</p>
-<p>If we wanted to use base R, we might start with the
-<code>sort()</code> function:</p>
-<pre class="r"><code>sort(gapminder_1997$lifeExp, decreasing = TRUE)</code></pre>
-<pre><code>  [1] 80.690 80.000 79.390 79.370 78.950 78.830 78.820 78.770 78.640 78.610 78.320 78.269 78.030 77.869
- [15] 77.550 77.530 77.510 77.340 77.260 77.218 77.158 77.130 76.810 76.156 76.151 76.122 76.110 75.970
- [29] 75.816 75.445 75.250 75.130 74.917 74.772 74.647 74.223 74.010 73.925 73.738 73.680 73.670 73.275
- [43] 73.244 72.950 72.750 72.710 72.499 72.312 72.262 72.232 72.146 71.973 71.938 71.555 71.527 71.096
- [57] 71.040 70.736 70.672 70.533 70.457 70.426 70.320 70.313 70.265 69.957 69.772 69.720 69.535 69.465
- [71] 69.400 69.388 69.152 68.835 68.564 68.426 68.386 68.042 67.727 67.660 67.659 67.521 67.217 66.322
- [85] 66.041 63.625 63.306 62.050 61.818 61.765 60.660 60.461 60.430 60.328 60.236 60.187 59.426 59.412
- [99] 58.909 58.811 58.556 58.390 58.020 56.671 56.534 55.861 55.558 55.373 54.978 54.777 54.407 54.289
-[113] 53.378 53.157 52.962 52.556 52.199 51.573 51.455 51.313 50.324 49.903 49.402 48.466 48.245 47.991
-[127] 47.495 47.464 46.809 46.344 46.066 45.326 44.873 44.578 43.795 42.587 42.221 41.763 40.963 40.238
-[141] 39.897 36.087</code></pre>
-<p>But this only sorts the <code>lifeExp</code> column and drops all the
-other information in the table, so we know the highest life expectancy
-but not the country to which it belongs. There is another function
-called <code>order()</code> which returns the indices of the sorting.
-Let’s call it first by itself and think about how to get what we want
-from it:</p>
-<pre class="r"><code>order(gapminder_1997$lifeExp, decreasing = TRUE)</code></pre>
-<pre><code>  [1]  67  56 123 124  58   6  65 119  45  21  96  64  91  50  92  10   7  48  30 134 114  44 135  72  33
- [26]  63  35 104  24  85 126 116 105 106  71 136  34   8  99  32  83   5  13   2 103 115  97  38  66 112
- [51] 137 131  79  76 125 139  57  82 138 110 120  25  16  26  73  37  68 107  40 130 100  15   3 132 102
- [76]  93 101  61  70  86  55 128  39  51  60  84 109  12  98  59  27  46  81  88 118 111  90   9  89  62
-[101]  49 129 140  54  19  47  74 121  77  11  69 122  42  36  29  14  20  23  52  94  17  80  43 127  41
-[126]  31  78  95 142  87  22  18  53 133 117  28  75   1   4 141 113 108</code></pre>
-<p>This is a vector of the row indices of <code>gapminder_1997</code>
-and the meaning of the result is that the 67th row is the entry with the
-highest <code>lifeExp</code>, the 56th row the second highest etc. We
-can re-order the rows of <code>gapminder_1997</code> using this vector
-of indices as in:</p>
-<pre class="r"><code>gapminder_1997[order(gapminder_1997$lifeExp, decreasing = TRUE), ]</code></pre>
-<pre><code># A tibble: 142 × 6
-   country          year       pop continent lifeExp gdpPercap
-   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
- 1 Japan            1997 125956499 Asia         80.7    28817.
- 2 Hong Kong China  1997   6495918 Asia         80      28378.
- 3 Sweden           1997   8897619 Europe       79.4    25267.
- 4 Switzerland      1997   7193761 Europe       79.4    32135.
- 5 Iceland          1997    271192 Europe       79.0    28061.
- 6 Australia        1997  18565243 Oceania      78.8    26998.
- 7 Italy            1997  57479469 Europe       78.8    24675.
- 8 Spain            1997  39855442 Europe       78.8    20445.
- 9 France           1997  58623428 Europe       78.6    25890.
-10 Canada           1997  30305843 Americas     78.6    28955.
-# ℹ 132 more rows</code></pre>
-<p>We see that we got the same thing as in <code>arrange()</code>. We
-observe that a data table has two dimensions (rows and columns). With
-square-bracket accessors, the rows are first and the columns are second,
-separated by a comma. We left the second entry in the <code>[,]</code>
-blank to indicate we want all columns returned. In the first entry,
-denoting the rows, we give it the vector of indices with the correct
-ordering.</p>
-<p>This is an excellent example of the relative simplicity of the
-<code>tidyverse</code> over base R.</p>
 <p><strong>Checkpoint</strong></p>
 <blockquote>
 <h2 id="exercise">Exercise</h2>
@@ -702,28 +663,7 @@ front of the column name.</p>
  9 Bangladesh  123315288 Asia         59.4      973.
 10 Belgium      10199787 Europe       77.5    27561.
 # ℹ 132 more rows</code></pre>
-<p>Notice the <code>year</code> column is no longer displayed. The
-equivalent can be done in base R with:</p>
-<pre class="r"><code>gapminder_1997[, -2]</code></pre>
-<pre><code># A tibble: 142 × 5
-   country           pop continent lifeExp gdpPercap
-   &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
- 1 Afghanistan  22227415 Asia         41.8      635.
- 2 Albania       3428038 Europe       73.0     3193.
- 3 Algeria      29072015 Africa       69.2     4797.
- 4 Angola        9875024 Africa       41.0     2277.
- 5 Argentina    36203463 Americas     73.3    10967.
- 6 Australia    18565243 Oceania      78.8    26998.
- 7 Austria       8069876 Europe       77.5    29096.
- 8 Bahrain        598561 Asia         73.9    20292.
- 9 Bangladesh  123315288 Asia         59.4      973.
-10 Belgium      10199787 Europe       77.5    27561.
-# ℹ 132 more rows</code></pre>
-<p>Note, the base R syntax works for numerical column indices only. The
-following throws a somewhat inscrutable error if we try to use the name
-of the column as we did in the <code>tidyverse</code> syntax:</p>
-<pre class="r"><code>gapminder_1997[, -c(&#39;year&#39;)]</code></pre>
-<pre><code>Error in -c(&quot;year&quot;): invalid argument to unary operator</code></pre>
+<p>Notice the <code>year</code> column is no longer displayed.</p>
 </div>
 <div id="saving-objects" class="section level2">
 <h2>Saving objects</h2>
