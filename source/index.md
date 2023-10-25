@@ -21,6 +21,8 @@ body, td {
 
 ---
 
+#### [Pre-workshop checklist](workshop_setup/preworkshop_checklist.html){target="_blank"}
+
 #### [Setup instructions](workshop_setup/setup_instructions.html){target="_blank"}
 
 #### [Slack workspace](https://umbioinfcoreworkshops.slack.com){target="_blank"}

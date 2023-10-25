@@ -230,20 +230,6 @@ ggplot(data = gapminder_1997) +
 
 **Checkpoint**
 
-## Captions
-
-Captions can also be included in the plot itself, if desired, within the `labs()` function:
-
-```{r, 'plot_caption'}
-ggplot(data = gapminder_1997) + 
-    aes(x = gdpPercap, y = lifeExp, color = continent, size = pop/1000000) + 
-    geom_point() + 
-    scale_color_brewer(palette = 'Set1') + 
-    labs(x = 'GDP Per Capita', y = 'Life Expectancy', color = 'Continent', size = 'Population (in millions)',
-         title = 'Do people in wealthier countries live longer?',
-         caption = 'Figure: GDP per capita and life expectancy are positively correlated, while population is not.')
-```
-
 ## Exploring more complex data
 
 The `gapminder_1997` has been useful for exploring `dplyr` and `ggplot` functions. Let's load in a more complex dataset so we have a bit more data to explore. The `data/gapmainder_data.csv` dataset is similar to `gapminder_1997`, but is longitudinal. The first step is to load in the data.
@@ -386,11 +372,7 @@ The `geom_point` and `geom_line` geometries are designed to display numeric valu
 ggplot(data = gapminder_1997) + aes(x = continent, y = lifeExp) + geom_boxplot()
 ```
 
-This makes comparing the range and spread of values across groups easier. The median of the data is displayed, as is the 25% and 75%-iles and any outliers. Another discrete geometry is the `geom_violin`, which gives an indication of the density of the data points along the values being plotted.
-
-```{r, 'plot_violin'}
-ggplot(data = gapminder_1997) + aes(x = continent, y = lifeExp) + geom_violin()
-```
+This makes comparing the range and spread of values across groups easier. The median of the data is displayed, as is the 25% and 75%-iles and any outliers.
 
 **Checkpoint**
 
@@ -541,21 +523,7 @@ ggplot(data = gapminder_1997) +
     geom_histogram(bins = 20)
 ```
 
-We can see there are fewer bins in this plot. If we wanted to make the bins span 5 years, we would do:
-
-```{r, 'plot_histogram_binwidth'}
-ggplot(data = gapminder_1997) +
-    aes(x = lifeExp) + 
-    geom_histogram(binwidth = 5)
-```
-
-Changing the binwidth makes the histogram more easily intepretable because we know the range of each bar. If, instead of frequency, we wanted to look at the density, the smoothed version of the histogram, we could use the `geom_density()` geometry.
-
-```{r, 'plot_density'}
-ggplot(data = gapminder_1997) +
-    aes(x = lifeExp) + 
-    geom_density()
-```
+We can see there are fewer bins in this plot.
 
 **Checkpoint**
 
@@ -582,18 +550,6 @@ ggplot(gapminder_1997) +
 ```
 
 Now there is only one x-axis, and multiple y-axes. Here the scale is the same for all the y-axes to make them comparable, but there are parameters of `facet_grid()` that allow the scales to change depending on the data within the facet itself if that's more appropriate.
-
-> ## Exercise
-> 
-> How would we modify the above code to display the facets as columns?
-> 
-> ```{r, 'facet_solution'}
-> ggplot(gapminder_1997) + 
->     aes(x = gdpPercap, y = lifeExp) + 
->     geom_point() + 
->     facet_grid(cols = vars(continent))
-> ```
-> 
 
 **Checkpoint**
 
@@ -665,15 +621,6 @@ Here the axis labels aren't centered on the ticks, and seem to be center justifi
 scatter_plot + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 ```
 
-> ## Exercise
-> 
-> After looking at the attributes for `theme()` with `?theme`, how would we change just the size of the plot title?
-> 
-> ```{r, 'title_size_solution'}
-> scatter_plot + theme(plot.title = element_text(size = 16))
-> ```
-> 
-
 **Checkpoint**
 
 ## Labeling points
@@ -733,7 +680,7 @@ ggplot(data = gapminder_1997_labels) +
 
 > ## Exercise
 > 
-> In a previous exercise we created a plot showing the trend of life expectancy across all countries over time, colored by the continent. THe following code generates a similar plot but for the GDP per capita.
+> In a previous exercise we created a plot showing the trend of life expectancy across all countries over time, colored by the continent. The following code generates a similar plot but for the GDP per capita.
 > 
 > ```{r, 'ggplot_exercise_example'}
 > ggplot(data = gapminder_data, aes(x = year, y = gdpPercap, color = continent, group = country)) +
