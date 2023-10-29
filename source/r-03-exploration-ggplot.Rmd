@@ -94,7 +94,7 @@ ggplot(data = gapminder_1997) +
 > ```
 > 
 
-This is progress, but we still don't have any data plotted. For this, we tell the plot object what to draw by adding a "geometry" ("geom" for short). There are many geometries, but we'll begin with `geom_point()`, which plots points in the x-y plane.
+This is progress, but we still don't have any data plotted. For this, we tell the plot object what to draw by adding a **geometry** (or `geom` for short). There are many geometries, but we'll begin with `geom_point()`, which plots points in the x-y plane.
 
 ```{r, 'plot5'}
 ggplot(data = gapminder_1997) +
@@ -140,7 +140,7 @@ With the continents shown by color, we immediately pick out that African countri
 
 ## Scale
 
-When we added the color mapping, ggplot added a legend automatically, assigning different colors to each of the unique values of `continent`. The colors ggplot uses are considered a "scale," and each aesthetic value we can give (x, y, color, etc) has a corresponding scale. Let's experiment with scales briefly to see how that works.
+When we added the color mapping, ggplot added a legend automatically, assigning different colors to each of the unique values of `continent`. The colors ggplot uses are considered a "scale," and each aesthetic value we can give (x, y, color, etc) has a corresponding scale. Let's experiment with a different numerical scale to see how that works.
 
 ```{r, 'plot_x_log_scale'}
 ggplot(data = gapminder_1997) +
@@ -168,7 +168,7 @@ ggplot(data = gapminder_1997) +
     scale_color_brewer(palette = 'Set1')
 ```
 
-The `scale_color_brewer()` function is one of many that changes the colors. There are also many "palettes" built in that are appropriate in different use cases. Run `RColorBrewer::display.brewer.all()` to see them. Note that there are linear color scales which might be appropriate for categorical data denoting intensity levels. There are also divergent color scales that might be useful for continuous variables centered around 0. There are also discrete color scales more appropriate for categorical data that aren't associated with magnitude, like `continent`.
+The `scale_color_brewer()` function is one of many that changes the colors. There are also many built-in "palettes" that are appropriate in different use cases. Run `RColorBrewer::display.brewer.all()` to see them. Note that there are linear color scales which might be appropriate for numerical data with a minimum value of 0. There are also divergent color scales that might be useful for continuous variables centered around 0. There are also discrete color scales more appropriate for categorical data that aren't associated with magnitude, like `continent`.
 
 **Checkpoint**
 
@@ -416,7 +416,7 @@ Compare this to the plot we saw with the `continent` column, where the order was
 
 ## Layers
 
-To get a sense for how the data are distributed in the box plot, we could add a layer with `geom_point()` in addition to `geom_boxplot()`.
+To get a sense for how the data are distributed in the box plot, we could add a **layer** with `geom_point()` in addition to `geom_boxplot()`.
 
 ```{r, 'plot_box_layer'}
 ggplot(data = gapminder_1997) + 
