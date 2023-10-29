@@ -201,7 +201,7 @@ The original data file we read in `data/gapminder_1997.csv` remains the same thr
 It looks like `x`, the data to be written and `file`, the path to the output file are required. There are other options, but we won't use them here.
 
 ```{r, 'write_csv', eval = FALSE}
-write_csv(gapminder_column_subset, file = 'gapminder_subset.csv')
+write_csv(gapminder_column_subset, file = 'gapminder_column_subset.csv')
 ```
 
 **Checkpoint**
