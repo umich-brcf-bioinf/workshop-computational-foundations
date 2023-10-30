@@ -459,9 +459,10 @@ label?</p>
 <p><img src="fig/03-plot4-1.png" width="816" style="display: block; margin: auto;" /></p>
 </blockquote>
 <p>This is progress, but we still don’t have any data plotted. For this,
-we tell the plot object what to draw by adding a “geometry” (“geom” for
-short). There are many geometries, but we’ll begin with
-<code>geom_point()</code>, which plots points in the x-y plane.</p>
+we tell the plot object what to draw by adding a
+<strong>geometry</strong> (or <code>geom</code> for short). There are
+many geometries, but we’ll begin with <code>geom_point()</code>, which
+plots points in the x-y plane.</p>
 <pre class="r"><code>ggplot(data = gapminder_1997) +
     aes(x = gdpPercap) +
     labs(x = &#39;GDP Per Capita&#39;) +
@@ -513,8 +514,8 @@ already guessed.</p>
 assigning different colors to each of the unique values of
 <code>continent</code>. The colors ggplot uses are considered a “scale,”
 and each aesthetic value we can give (x, y, color, etc) has a
-corresponding scale. Let’s experiment with scales briefly to see how
-that works.</p>
+corresponding scale. Let’s experiment with a different numerical scale
+to see how that works.</p>
 <pre class="r"><code>ggplot(data = gapminder_1997) +
     aes(x = gdpPercap) +
     labs(x = &#39;GDP Per Capita&#39;) +
@@ -540,11 +541,11 @@ the default linear scale. We can also change the scale on the
     scale_color_brewer(palette = &#39;Set1&#39;)</code></pre>
 <p><img src="fig/03-plot_color_continent_set1-1.png" width="816" style="display: block; margin: auto;" /></p>
 <p>The <code>scale_color_brewer()</code> function is one of many that
-changes the colors. There are also many “palettes” built in that are
+changes the colors. There are also many built-in “palettes” that are
 appropriate in different use cases. Run
 <code>RColorBrewer::display.brewer.all()</code> to see them. Note that
-there are linear color scales which might be appropriate for categorical
-data denoting intensity levels. There are also divergent color scales
+there are linear color scales which might be appropriate for numerical
+data with a minimum value of 0. There are also divergent color scales
 that might be useful for continuous variables centered around 0. There
 are also discrete color scales more appropriate for categorical data
 that aren’t associated with magnitude, like <code>continent</code>.</p>
@@ -996,8 +997,8 @@ affect the tests for differential expression.</p>
 <div id="layers" class="section level2">
 <h2>Layers</h2>
 <p>To get a sense for how the data are distributed in the box plot, we
-could add a layer with <code>geom_point()</code> in addition to
-<code>geom_boxplot()</code>.</p>
+could add a <strong>layer</strong> with <code>geom_point()</code> in
+addition to <code>geom_boxplot()</code>.</p>
 <pre class="r"><code>ggplot(data = gapminder_1997) + 
     aes(x = continent, y = lifeExp) + 
     geom_boxplot() + 

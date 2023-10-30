@@ -13,7 +13,7 @@
 
 <title>Introducing R and RStudio</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -559,13 +559,13 @@ shortcut:</p>
 <code>library(tidyverse)</code> and then hit
 <KBD>Ctrl</KBD>+<KBD>Enter</KBD>.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>── Attaching core tidyverse packages ──────────────────────────────────────────────────── tidyverse 2.0.0 ──
+<pre><code>── Attaching core tidyverse packages ─────────────────────────────────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.2     ✔ readr     2.1.4
 ✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ ggplot2   3.4.3     ✔ tibble    3.2.1
 ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✔ purrr     1.0.2     
+── Conflicts ───────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
@@ -592,7 +592,7 @@ the default. <br></p>
 <code>read_csv()</code> function:</p>
 <pre class="r"><code>gapminder_1997 = read_csv(&#39;data/gapminder_1997.csv&#39;)</code></pre>
 <pre><code>Rows: 142 Columns: 6
-── Column specification ────────────────────────────────────────────────────────────────────────────────────
+── Column specification ───────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;,&quot;
 chr (2): country, continent
 dbl (4): year, pop, lifeExp, gdpPercap
@@ -735,9 +735,9 @@ function needs to be told what to read because there is no default.</p>
 <p>Not every function needs arguments, but many do. Try the following
 functions:</p>
 <pre class="r"><code>Sys.Date()</code></pre>
-<pre><code>[1] &quot;2023-07-29&quot;</code></pre>
+<pre><code>[1] &quot;2023-10-29&quot;</code></pre>
 <pre class="r"><code>getwd()</code></pre>
-<pre><code>[1] &quot;/Users/rcavalca/Projects/2023-07-31-umich-computational-foundations/source&quot;</code></pre>
+<pre><code>[1] &quot;/Users/rcavalca/Projects/workshop-computational-foundations/source&quot;</code></pre>
 <pre class="r"><code>round(3.1415, 2)</code></pre>
 <pre><code>[1] 3.14</code></pre>
 <p>Notice that we threw in <code>round()</code> which actually takes two

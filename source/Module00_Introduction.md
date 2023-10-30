@@ -56,13 +56,14 @@ recognize these techniques when you see them and, with some independent study, a
 
 
 ## About the workshop team
-| ![](images/Module00_headshots/headshot_cgates.jpg) | ![](images/Module00_headshots/headshot_mbradenb.jpg) | ![](images/Module00_headshots/headshot_rcavalca.jpg) |
-|:-:|:-:|:-:|
-| **Chris** | **Marci** | **Raymond** |
-| ![](images/Module00_headshots/headshot_trsaari.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) | ![](images/Module00_headshots/headshot_daisyfu.jpg) |
-| **Travis** | **Dana** | **Daisy** |
-| ![](images/Module00_headshots/headshot_hongss.jpg) | ![](images/Module00_headshots/headshot_mkdohert.jpg) |
-| **Shuangsong** | **Matt** |
+| ![](images/Module00_headshots/headshot_cgates.jpg) | ![](images/Module00_headshots/headshot_mbradenb.jpg) | ![](images/Module00_headshots/headshot_rcavalca.jpg) | ![](images/Module00_headshots/headshot_trsaari.jpg) |
+|:-:|:-:|:-:|:-:|
+| **Chris** | **Marci** | **Raymond** | **Travis** |
+| ![](images/Module00_headshots/headshot_daisyfu.jpg) | ![](images/Module00_headshots/headshot_nlesniak.jpg) | ![](images/Module00_headshots/headshot_znuzhat.jpg) |
+| **Daisy** | **Nick** | **Nuzhat** |
+| ![](images/Module00_headshots/headshot_hongss.jpg) | ![](images/Module00_headshots/headshot_mkdohert.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) |
+| **Shuangsong** | **Matt** |**Dana** | 
+
 
 <br/>
 
