@@ -1,5 +1,5 @@
 ---
-title: "UM Bioinformatics Core Fall Workshop Series"
+title: "UM Bioinformatics Core Summer Workshop Series"
 author: ""
 output:
         html_document:
@@ -21,8 +21,8 @@ body{ /* Normal  */
 
 The Bioinf Core Workshop Team is pleased to host two workshops:
 
-### **<a href="https://www.eventbrite.com/e/computational-foundations-a-3-day-virtual-workshop-tickets-714248324967" target="_blank">11/1-3, 9am-1pm ET: Computational Foundations</a>**  
-### **<a href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-714253069157" target="_blank">11/15-17, 9am-1pm ET: RNA-Seq Demystified</a>**
+### **<a href="https://www.eventbrite.com/e/computational-foundations-a-3-day-virtual-workshop-tickets-916573454877" target="_blank">7/22-24, 1-5pm ET: Computational Foundations</a>**  
+### **<a href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-916575811927" target="_blank">8/5-7, 1-5pm ET: RNA-Seq Demystified</a>**
 
 
 * This two-workshop series is targeted toward researchers who would like to better understand the analysis of differential gene expression in bulk RNA-Seq data. By the end of the workshop series, attendees will be able to:
@@ -34,7 +34,7 @@ The Bioinf Core Workshop Team is pleased to host two workshops:
 **RNA-Seq Demystified** assumes a basic knowledge of genetics and prior enrollment 
 in a Computational Foundations workshop, Software Carpentry workshop, or equivalent experience.
 
-<table style="margin-left:auto; margin-right:auto;"><tr><td><a title="Learn More and Register" href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-714253069157" style="padding:18px; background-color:#00B2A9; font-weight:bold;letter-spacing:normal;line-height:100%;text-align:center;text-decoration:none;color:#ffffff;display:block" target="_blank">Learn More and Register</a></td></tr></table>
+<table style="margin-left:auto; margin-right:auto;"><tr><td><a title="Learn More and Register" href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-916575811927" style="padding:18px; background-color:#00B2A9; font-weight:bold;letter-spacing:normal;line-height:100%;text-align:center;text-decoration:none;color:#ffffff;display:block" target="_blank">Learn More and Register</a></td></tr></table>
 <br/>
 
 ### A few more details:
@@ -46,7 +46,7 @@ in a Computational Foundations workshop, Software Carpentry workshop, or equival
   * While it is possible to register for a single workshop, we recommend that you attend both. When you enroll in the **RNA-Seq Demystified** workshop, you can request to be automatically registered for **Computational Foundations**. 
   * The **Computational Foundations** workshop is free of charge, however please note that: 1) registration precedence is given to RNA-Seq Demystified attendees and 2) general admission registration for Computational Foundations opens mid-October.
   
-* Registration closes 10/25/2023.
+* Registration closes 7/15.
 
 
 <br/>
