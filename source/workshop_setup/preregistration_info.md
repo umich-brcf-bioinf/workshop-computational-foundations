@@ -21,8 +21,8 @@ body{ /* Normal  */
 
 The Bioinf Core Workshop Team is pleased to host two workshops:
 
-### **<a href="https://www.eventbrite.com/e/computational-foundations-a-3-day-virtual-workshop-tickets-916573454877" target="_blank">7/22-24, 1-5pm ET: Computational Foundations</a>**  
-### **<a href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-916575811927" target="_blank">8/5-7, 1-5pm ET: RNA-Seq Demystified</a>**
+### **<a href="https://www.eventbrite.com/e/computational-foundations-a-3-day-virtual-workshop-tickets-916573454877" target="_blank">July 22-24, 1-5pm ET: Computational Foundations</a>**  
+### **<a href="https://www.eventbrite.com/e/rna-seq-demystified-a-3-day-virtual-workshop-registration-916575811927" target="_blank">August 5-7, 1-5pm ET: RNA-Seq Demystified</a>**
 
 
 * This two-workshop series is targeted toward researchers who would like to better understand the analysis of differential gene expression in bulk RNA-Seq data. By the end of the workshop series, attendees will be able to:
