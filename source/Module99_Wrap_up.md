@@ -39,7 +39,7 @@ that will enable more efficient, reproducible, and impactful computational resea
 
 ## Housekeeping
 
-- Please take our optional <a class="external" href="https://forms.gle/eidMPDLtSYDpAVmX7" target="_blank">post-workshop survey</a> (5-10 minutes) <br />
+- Please take our optional <a class="external" href="https://forms.gle/JQg4tn1B4jAVxkz29" target="_blank">post-workshop survey</a> (5-10 minutes) <br />
 
 - We will email you a link to the final session recordings by next week.
 
@@ -103,13 +103,13 @@ for 90 days.
 
 ![](images/Module00_sponsor_logos.png)
 
-| ![](images/Module00_headshots/headshot_cgates.jpg) | ![](images/Module00_headshots/headshot_mbradenb.jpg) | ![](images/Module00_headshots/headshot_rcavalca.jpg) | ![](images/Module00_headshots/headshot_trsaari.jpg) |
+## About the workshop team
+| ![](images/Module00_Introduction/headshots/headshot_cgates.jpg) | ![](images/Module00_Introduction/headshots/headshot_mbradenb.jpg) | ![](images/Module00_Introduction/headshots/headshot_rcavalca.jpg) |
 |:-:|:-:|:-:|:-:|
-| **Chris** | **Marci** | **Raymond** | **Travis** |
-| ![](images/Module00_headshots/headshot_daisyfu.jpg) | ![](images/Module00_headshots/headshot_nlesniak.jpg) | ![](images/Module00_headshots/headshot_znuzhat.jpg) |
-| **Daisy** | **Nick** | **Nuzhat** |
-| ![](images/Module00_headshots/headshot_hongss.jpg) | ![](images/Module00_headshots/headshot_mkdohert.jpg) | ![](images/Module00_headshots/headshot_damki.jpg) |
-| **Shuangsong** | **Matt** |**Dana** | 
+| **Chris** | **Marci** | **Raymond** |
+![](images/Module00_Introduction/headshots/headshot_trsaari.jpg) | ![](images/Module00_Introduction/headshots/headshot_damki.jpg) |
+| **Travis** | **Dana** |
+
 
 <br/>
 

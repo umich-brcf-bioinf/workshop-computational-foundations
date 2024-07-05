@@ -3,7 +3,7 @@ title: "Computational Foundations Workshop"
 output:
         html_document:
             includes:
-                in_header: header.html
+                in_header: index_header.html
             theme: paper
             toc: false
             number_sections: false
@@ -30,7 +30,7 @@ body, td {
 ---
 
 
-### Day 1 (Chris & Travis)
+### Day 1 (Chris/Marci & Travis)
 | Time | Topic |
 | :---  | :----------------------------------------------------------- |
 |  9:00 | [Introductions and Startup](Module00_Introduction.html) |
