@@ -26,10 +26,6 @@ pre {
   font-size: 12px
 }
 
-a.external {
-    background: url(images/external-link.png) center right no-repeat;
-    padding-right: 13px;
-}
 </style>
 
 We hope you now have more familiarity with key concepts, tools, and techniques
@@ -39,13 +35,13 @@ that will enable more efficient, reproducible, and impactful computational resea
 
 ## Housekeeping
 
-- Please take our optional <a class="external" href="https://forms.gle/JQg4tn1B4jAVxkz29" target="_blank">post-workshop survey</a> (5-10 minutes) <br />
+- Please take our optional [post-workshop survey](https://forms.gle/JQg4tn1B4jAVxkz29){target="_blank"} (5-10 minutes) <br />
 
 - We will email you a link to the final session recordings by next week.
 
 - This workshop website will be available.
 
-- The <a class="external" href="https://umbioinfcoreworkshops.slack.com" target="_blank">UM Bioinformatics Core Workshop Slack channel</a> will be available 
+- The [UM Bioinformatics Core Workshop Slack channel](https://umbioinfcoreworkshops.slack.com){target="_blank"} will be available 
 for 90 days.
 
 ---
@@ -65,43 +61,40 @@ for 90 days.
 
 ### Where can I learn more about Bash commands or RStudio functions?
 - Bash cheatsheets:
-  - <a class="external" target="_blank" href="https://files.fosswire.com/2007/08/fwunixref.pdf">https://files.fosswire.com/2007/08/fwunixref.pdf</a>
-- <a class="external" target="_blank" href="https://explainshell.com/">ExplainShell.com</a> can elaborate the flags of specific Bash commands:
+  - [https://files.fosswire.com/2007/08/fwunixref.pdf](https://files.fosswire.com/2007/08/fwunixref.pdf){target="_blank"}
+- [ExplainShell.com](https://explainshell.com/){target="_blank"} can elaborate the flags of specific Bash commands:
 - Regular expression syntax (aka "regex") is extremely powerful but also a broad topic unto itself
-  - <a class="external" target="_blank" href="https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285">Regex tutorial — A quick cheatsheet by examples</a>
+  - [Regex tutorial — A quick cheatsheet by examples](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285){target="_blank"}
   - A bit like ExplainShell above, but for regex expressions:<br/>
-  <a class="external" target="_blank" href="https://regexr.com/">https://regexr.com/</a>
-
-- A nifty collection of <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank" class="external">cheatsheets for R</a> and links to download some our favorites:
-  - <a class="external" target="_blank" href="http://github.com/rstudio/cheatsheets/blob/main/base-r.pdf">Base R</a>
-  - <a class="external" target="_blank" href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf">Data transformation with dplyr</a>
-  - <a class="external" target="_blank" href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf">Data visualization with ggplot2</a>
+  [https://regexr.com](https://regexr.com/){target="_blank"} 
+- A nifty collection of [cheatsheets for R](https://www.rstudio.com/resources/cheatsheets/){target="_blank"} and links to download some our favorites:
+  - [Base R](http://github.com/rstudio/cheatsheets/blob/main/base-r.pdf){target="_blank"}   - [Data transformation with dplyr](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf){target="_blank"}
+  - [Data visualization with ggplot2](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf){target="_blank"}
 
 ### Can you recommend other relevant workshops or turorials?
 - Intro lessons and workshops in Bash / Git / R / Python : 
-  - <a class="external" href="https://software-carpentry.org/lessons/" target="_blank">Software Carpentry</a>.
-  - <a class="external"  href="https://umcarpentries.org/" target="_blank">The Carpentries at the
-  University of Michigan</a> host several introductory workshops each year following curricula that are developed collaboratively and using the latest research into best practices for teaching computer science content. All workshops are offered for free to learners. 
+  - [Software Carpentry](https://software-carpentry.org/lessons/){target="_blank"}
+  - [The Carpentries at the University of Michigan](https://umcarpentries.org/){target="_blank"} host several introductory workshops each year following curricula that are developed collaboratively and using the latest research into best practices for teaching computer science content. All workshops are offered for free to learners. 
 
 
 ## How can I learn more about computational research at University of Michigan?
-- <a class="external"  href="https://datascience.isr.umich.edu/events/coderspaces/" target="_blank">UM CoderSpaces "office hours"</a> and UM CoderSpaces Slack workspace. _(See "Useful Resources" section in above page for instructions on how to join and access the CoderSpaces Slack workspace.)_
-- Upcoming <a class="external" href="https://arc.umich.edu/events/" target="_blank">UM Advanced Research Computing workshops</a>.
+- [UM CoderSpaces "office hours"](https://datascience.isr.umich.edu/events/coderspaces/){target="_blank"} and UM CoderSpaces Slack workspace. _(See "Useful Resources" section in CoderSpaces page for instructions on how to join and access the CoderSpaces Slack workspace.)_
+- Upcoming [UM Advanced Research Computing workshops](https://arc.umich.edu/events/){target="_blank"}.
 - Advanced Research Computing (ARC) at University of Michigan hosts a
   high-performance computing (HPC) platform called _Great Lakes_ which combines
   high-end computers, fast/resilient storage, and pre-installed software.
   GreatLakes may be a good resource for folks who need to run the more compute
   intensive steps and a substantial block of compute and storage is subsidized
   by ARC making it essentially free to many researchers.
-  - About <a class="external" href="https://arc.umich.edu/greatlakes/" target="_blank">Great Lakes HPC</a>.
-  - About the ARC <a class="external" href="https://arc.umich.edu/umrcp/" target="_blank">Research Computing Package</a>.
-  - Videos on <a class="external" href="https://www.mivideo.it.umich.edu/channel/ARC-TS%2BTraining/181860561/" target="_blank">getting started with Great Lakes</a>. (available to UM folks)
+  - About [Great Lakes HPC](https://arc.umich.edu/greatlakes/){target="_blank"}.
+  - About the ARC [Research Computing Package](https://arc.umich.edu/umrcp/){target="_blank"}.
+  - Videos on [getting started with Great Lakes](https://www.mivideo.it.umich.edu/channel/ARC-TS%2BTraining/181860561/){target="_blank"}. (available to UM folks)
 
 ---
 
 ## Thank you
 
-![](images/Module00_sponsor_logos.png)
+![](images/Module00_Introduction/sponsor_logos.png)
 
 ## About the workshop team
 | ![](images/Module00_Introduction/headshots/headshot_cgates.jpg) | ![](images/Module00_Introduction/headshots/headshot_mbradenb.jpg) | ![](images/Module00_Introduction/headshots/headshot_rcavalca.jpg) |
@@ -113,10 +106,10 @@ for 90 days.
 
 <br/>
 
-Thank you for participating on our workshop. We welcome your questions and
+Thank you for participating in our workshop. We welcome your questions and
 feedback now and in the future.
 
 Bioinformatics Workshop Team
 
 [bioinformatics-workshops@umich.edu](mailto:bioinformatics-workshops@umich.edu) <br/>
-<a class="external" href="https://brcf.medicine.umich.edu/bioinformatics">UM BRCF Bioinformatics Core</a>
+[UM BRCF Bioinformatics Core](https://medresearch.umich.edu/office-research/about-office-research/biomedical-research-core-facilities/bioinformatics-core){target="_blank"}

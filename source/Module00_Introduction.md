@@ -210,7 +210,7 @@ It is important that you can see:
   knowledge.
 
 
-## [UM BRCF Bioinformatics Core](https://brcf.medicine.umich.edu/bioinformatics){target="_blank"}
+## [UM BRCF Bioinformatics Core](https://medresearch.umich.edu/office-research/about-office-research/biomedical-research-core-facilities/bioinformatics-core){target="_blank"}
 
 - The University of Michigan BRCF Bioinformatics Core is a team of analysts that help
   researchers **design, analyze, and interpret** high-throughput genomics experiments.
