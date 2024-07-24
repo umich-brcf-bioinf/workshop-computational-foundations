@@ -140,14 +140,26 @@ If you can't install or launch git-bash, or if it returns an
     This step takes a few minutes, so now is a good time to get
     coffee/tea while RStudio cooks.)*
 
->   install.packages(c(\"tidyverse\", \"ggrepel\", \"RColorBrewer\"))\
-    missing \<- setdiff(c(\"ggplot2\", \"ggrepel\", \"RColorBrewer\", \"dplyr\"),
-            rownames(installed.packages()))\
-    if (!length(missing)) { cat(\"Ready for Computational Foundations workshop\\n\")}
-    else {cat(\"PROBLEM: could not install:\", missing, \"\\n\")}
+```
+required_packages = c("tidyverse",
+                      "ggrepel", 
+                      "RcolorBrewer")
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+  requireNamespace("BiocManager", quietly = TRUE)
+}
+BiocManager::install(required_packages, update=FALSE, ask=FALSE)
 
+missing <- setdiff(required_packages, rownames(installed.packages()))
+if (!length(missing)) {
+  cat("Ready for workshop!\n")
+  } else {
+    cat("PROBLEM: could not install:", missing, "\n")
+  }
+}
+```
 8.  The Console output should conclude with the text:\
-    **Ready for Computational Foundations workshop**.
+    **Ready for workshop!**.
 
 9.  Press **Control-Q** close RStudio; when prompted to *Save workspace
     image...*, click **Don't Save**.
@@ -249,14 +261,28 @@ If you can't install or launch git-bash, or if it returns an
     window. This step takes a few minutes, so now is a good time to
     get coffee/tea while RStudio cooks.)*
 
->   install.packages(c(\"tidyverse\", \"ggrepel\", \"RColorBrewer\"))\
-    missing \<- setdiff(c(\"ggplot2\", \"ggrepel\", \"RColorBrewer\", \"dplyr\"),
-            rownames(installed.packages()))\
-    if (!length(missing)) { cat(\"Ready for Computational Foundations workshop\\n\")}
-    else {cat(\"PROBLEM: could not install:\", missing, \"\\n\")}
+```
+required_packages = c("tidyverse",
+                      "ggrepel", 
+                      "RcolorBrewer")
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+  requireNamespace("BiocManager", quietly = TRUE)
+}
+BiocManager::install(required_packages, update=FALSE, ask=FALSE)
+
+missing <- setdiff(required_packages, rownames(installed.packages()))
+if (!length(missing)) {
+  cat("Ready for workshop!\n")
+  } else {
+    cat("PROBLEM: could not install:", missing, "\n")
+  }
+}
+```
+
 
 8.  The Console output should conclude with the text
-  **Ready for Computational Foundations workshop**
+  **Ready for workshop!**
 
 9.  Press **Command-Q** close RStudio; when prompted to *Save workspace
     image...*, click **Don't Save**.
