@@ -56,7 +56,7 @@ for 90 days.
   scp -r YOUR_USERNAME@bfx-workshop01.med.umich.edu:"CF*" computational-foundations-workshop
   ```
 ### How could I install this software on my workstation/laptop?
-  - See [Advanced setup instructions](workshop_setup/setup_instructions_advanced.html)
+  - See [Advanced setup instructions](workshop_setup/setup_instructions_advanced.html){target="_blank"}
     for details on how to install programs on your own computer.
 
 ### Where can I learn more about Bash commands or RStudio functions?
@@ -72,6 +72,7 @@ for 90 days.
   - [Data visualization with ggplot2](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf){target="_blank"}
 
 ### Can you recommend other relevant workshops or turorials?
+- The [University of Michigan Bioinformatics Core](https://medresearch.umich.edu/office-research/about-office-research/biomedical-research-core-facilities/bioinformatics-core/bioinformatics-workshops-training){target="_blank"} hosts workshops through the year.
 - Intro lessons and workshops in Bash / Git / R / Python : 
   - [Software Carpentry](https://software-carpentry.org/lessons/){target="_blank"}
   - [The Carpentries at the University of Michigan](https://umcarpentries.org/){target="_blank"} host several introductory workshops each year following curricula that are developed collaboratively and using the latest research into best practices for teaching computer science content. All workshops are offered for free to learners. 
